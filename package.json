@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "jest": "^29.6.1"
+  },
+  "name": "truekind",
+  "version": "1.0.0",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
