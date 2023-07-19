@@ -7,7 +7,7 @@
 	vertical-align: baseline;
     text-decoration: none;
 }
-/* Estilos generales del footer */
+
 footer {
     background-color: #333;
     color: #fff;
@@ -15,22 +15,22 @@ footer {
     text-align: center;
   }
   
-  /* Estilos para la sección de contactos */
+
   .contact {
     margin-bottom: 1rem;
   }
   
-  /* Estilos para el icono de contacto */
+
   .contact-info i {
     margin-right: 0.5em;
   }
   
-  /* Estilos para la sección de "Sobre Nosotros" */
+
   .value {
     margin-bottom: 1rem;
   }
   
-  /* Estilos para el contenedor de enlaces sociales */
+
   .social {
     display: flex;
     justify-content: center;
@@ -58,7 +58,7 @@ footer {
   }
 
   .social a:hover .fa-instagram {
-    color: #e4405f; 
+    color: #f28b9e; 
   }
   
 
