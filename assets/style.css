@@ -562,27 +562,7 @@ body {
         padding: 10px;
     }
 }
-  /* Estilos para la barra de navegación */
-  [data-navbar] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
   
-  [data-navbar] .nav-links {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  [data-navbar] .nav-link {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 15px;
-  }
-  
-  [data-navbar] .nav-link:hover {
-    background-color: #555;
-  }
   
 /*-----------------------------------*\
 #PRODUCT
@@ -906,10 +886,50 @@ p.author a {
   
 
 /*-----------------------------------*\
-  #BRAND
+  #CTA
 \*-----------------------------------*/
+.cta {
+    background-position: 75%;
+}
 
+.cta-banner {
+    display: none;
+}
 
+.cta-content {
+    padding-block: 80px var(--section-padding);
+}
+
+.cta .section-title {
+    text-align: left;
+    margin-block: 10px 20px;
+}
+
+.cta .section-text {
+    margin-block-end: 30px;
+}
+
+.cta .btn{
+    border-radius: 5px;
+    background-color:  #ff5733; 
+    color: #ffffff; 
+    border: solid 2px #ff5733;
+}
+
+.cta .btn:hover {
+    background-color: #ffffff; 
+    color: #ff5733; 
+    border: solid 2px #ff5733;
+}
+
+#iconoGarantia{
+    width: 40%;
+}
+
+.containerGuarantee{
+    display: flex;
+    align-items: center;
+}
 
 /*-----------------------------------*\
   #FORMULARIO
