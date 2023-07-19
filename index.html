@@ -1,12 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TrueKind</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="preload" as="image" href="/img/hero-banner.jpg>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="recursos/FAVICON-icons8-cat-footprint-ios-16-filled-32.png">
+
 </head>
-<body>
-    <h1>HOLA TRUEKIND</h1>
+
+<body id="top">
+    <!-- 
+    - #HEADER
+-->
+
+    <header class="header" data-header>
+        <div class="container">
+            <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+            </button>
+
+            <a class="logo">TrueKind</a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#productos" class="navbar-link" data-nav-link>Products</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#servicios" data-nav-link>About us</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#contacto" data-nav-link>Contact</a>
+                    </li>
+                </ul>
+
+                <a class="navbar-action-btn">Log In</a>
+            </nav>
+
+            <div class="header-actions">
+                
+                <button class="action-btn user" aria-label="User">
+                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <div class="header-section container">
+                    <div>
+                        
+                        <svg onclick="showCart(this)" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-horse-toy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3.5 17.5c5.667 4.667 11.333 4.667 17 0" />
+                            <path d="M19 18.5l-2 -8.5l1 -2l2 1l1.5 -1.5l-2.5 -4.5c-5.052 .218 -5.99 3.133 -7 6h-6a3 3 0 0 0 -3 3" />
+                            <path d="M5 18.5l2 -9.5" />
+                            <path d="M8 20l2 -5h4l2 5" />
+                          </svg>
+                        <p class="count-product">0</p>
+                    </div>
+                    <div class="cart-products" id="products-id">
+                        <p class="close-btn" onclick="closeBtn()">X</p>
+                        <h3>Favorites</h3>
+                        <div class="card-items">
+                        </div>
+                </div>
+                
+                    <!-- <button class="action-btn carrito" aria-label="cart">
+                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="btn-badge">0</span>
+                </button> -->
+                </div>
+            </div>
+    </header>
+    <main>
+        <article>
+
+            <!-- HERO -->
+            <section class="section hero has-bg-image" id="home" aria-label="home"
+                style="background-image: url('assets/img/hero-banner.jpg')">
+            </section>
+
+            <!-- CATEGORY -->
+            <section class="section category" aria-label="category">
+                <div class="container">
+                    <h2 class="h2 section-title">
+                        <span class="span">Top</span> categories
+                    </h2>
+
+                    <ul class="has-scrollbar">
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/img/toys.jpg" width="330" height="300" loading="lazy"
+                                        alt="toys" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Toys</a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/img/clothes.jpg" width="330" height="300" loading="lazy"
+                                        alt="clothes" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Clothes</a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/img/furniture.jpg" width="330" height="300" loading="lazy"
+                                        alt="furniture" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Furniture</a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/img/sneakers.jpg" width="330" height="300" loading="lazy"
+                                        alt="sneakers" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Sneakers</a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300">
+                                    <img src="./assets/img/books.jpg" width="330" height="300" loading="lazy"
+                                        alt="books" class="img-cover" />
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a class="card-title">Books</a>
+                                </h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PUBLICITADOS -->
+            <section id="servicios" class="section offer" aria-label="offer">
+                <h2 class="h2 section-title">
+                    <span class="span">Donate </span> and promote yourself
+                </h2>
+                <div class="background-image">
+                    <div id="containerDonate">
+                        <p class="section-text">
+                            Donating children's items helps provide joy and support to those in need, fostering a brighter future for young hearts. Your contribution can make a lasting difference in a child's life. Join us in spreading smiles through the gift of childhood essentials.
+                        </p>
+                        <button class="btn-donar">Donar</button>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <!-- FORMULARIO -->
+           
+                    <form action="" method="post" class="formulario" id="formulario">
+                    </form>
+
+            <!-- fin de Formulario-->
+
+            <!-- FOOTER -->
+            
+
+            <!-- INICIO -->
+            <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+                <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+            </a>
+            <script src="./assets/main.js" defer></script>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
 </body>
+
 </html>
