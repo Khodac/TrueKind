@@ -7,3 +7,107 @@
 	vertical-align: baseline;
     text-decoration: none;
 }
+/* Estilos generales del footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Estilos para la sección de contactos */
+  .contact {
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilos para el icono de contacto */
+  .contact-info i {
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos para la sección de "Sobre Nosotros" */
+  .value {
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilos para el contenedor de enlaces sociales */
+  .social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+
+  .social a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+  }
+  
+
+  .social a:hover .fa-facebook {
+    color: #1877f2;
+  }
+
+  .social a:hover .fa-twitter {
+    color: #65bbf0;
+  }
+
+  .social a:hover .fa-pinterest {
+    color: #bd081c; 
+  }
+
+  .social a:hover .fa-instagram {
+    color: #e4405f; 
+  }
+  
+
+  small {
+    color: #fff;
+  }
+  
+
+  
+  
+
+  @media (max-width: 768px) {
+    
+
+    #footer {
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .contact, .value {
+      display: none;
+    }
+    
+    .social {
+      margin-bottom: 1rem;
+    }
+  
+    .social-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+  
+    .social a {
+      font-size: 1.8rem;
+      margin: 0 1rem; 
+    }
+  
+    .product-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .product-card p {
+      font-size: 1.1rem;
+    }
+  
+    .product-card button {
+      padding: 0.6rem 1.2rem;
+    }
+  }
+  
