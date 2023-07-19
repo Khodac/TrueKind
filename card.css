@@ -1,0 +1,103 @@
+body {
+    background: blueviolet;
+    color: darkGrey;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+  
+  a.btn {
+    background: teal;
+    border-radius: 20px;
+    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+    color: white;
+    display: inline-block;
+    padding: 6px 30px;
+    border: 2px solid rgb(128, 0, 0);
+    position: relative;
+    text-decoration: none;
+    transition: all 0.1s 0s ease-out;
+  }
+  
+  
+  .no-touch a.btn:hover {
+    background: lighten(teal, 2.5);
+    box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+    transform: translateY(-2px);
+    transition: all 0.25s 0s ease-out;
+  }
+  
+  .no-touch a.btn:active,
+  a.btn:active {
+    background: darken(teal, 2.5);
+    box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+    transform: translate3d(0, 1px, 0);
+    transition: all 0.025s 0s ease-out;
+  }
+  
+  div.cards {
+    margin: 80px auto;
+    max-width: 960px;
+    text-align: center;
+  }
+  
+  div.card {
+    background: transparent;
+    display: inline-block;
+    margin: px;
+    max-width: 300px;
+    perspective: 1000;
+    position: relative;
+    text-align: left;
+    transition: all 0.3s 0s ease-in;
+    width: 300px;
+    z-index: 1;
+    border-radius: 15px;
+  }
+  
+  img.card__image {
+    max-width: 250px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  div.card:hover img.card__image {
+    transform: scale(1.1);
+  }
+  
+  div.card-title {
+    background:transparent;
+    padding: 6px 15px 10px;
+    position: relative;
+    z-index: 0;
+  }
+  
+  div.card-actions {
+    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+    padding: 10px 15px 20px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  div.card-flap {
+    background: darken(white, 15);
+    position: absolute;
+    width: 100%;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+    border-radius: 15px;
+  }
+  
+  div.cards.showing div.card {
+    cursor: pointer;
+    opacity: 0.6;
+    transform: scale(0.88);
+  }
+  
+  div.cards.showing div.card:hover {
+    opacity: 0.94;
+    transform: scale(0.92);
+  }
+  
+  div.card-actions a.btn {
+    margin-top: 20px;
+  }
