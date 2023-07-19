@@ -221,7 +221,6 @@ function loadEventListenrs(){
 
     containerBuyCart.addEventListener('click', deleteProduct);
     
-    alertPagado.addEventListener('click', mensajePagado);
 }
 
 function addProduct(e){
@@ -333,17 +332,38 @@ function loadHtml(){
         containerBuyCart.appendChild(row);
     });
 
-    priceTotal.innerHTML = totalCard;
-    amountProduct.innerHTML = countProduct;
+
+ 
 }
-        containerBuyCart.appendChild(row);
-
-        priceTotal.innerHTML = totalCard;
-
-        amountProduct.innerHTML = countProduct;
+        
 function clearHtml(){
     containerBuyCart.innerHTML = '';
 }
+//SEARCH 
+document.getElementById('buscarBtn').addEventListener('click', filterProducts);
 
+function filterProducts() {
+  console.log("Filtering products...");
+  const searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
+  const estadoFilter = document.getElementById('estadoFilter').value.toLowerCase();
+  const edadFilter = document.getElementById('edadFilter').value;
 
+  const products = document.querySelectorAll('.carts');
+
+  products.forEach(product => {
+    const estado = product.getAttribute('data-estado').toLowerCase();
+    const edad = parseInt(product.getAttribute('data-edad'));
+    const nombre = product.getAttribute('data-nombre').toLowerCase();
+
+    const estadoMatch = estado.includes(estadoFilter) || estadoFilter === '';
+    const edadMatch = edadFilter === '' || (edad && edad >= parseInt(edadFilter));
+    const nombreMatch = nombre.includes(searchTerm) || searchTerm === '';
+
+    if (estadoMatch && edadMatch && nombreMatch) {
+      product.style.display = 'block';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+}
 

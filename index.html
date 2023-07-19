@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
         rel="stylesheet" />
-    <link rel="preload" as="image" href="/img/hero-banner.jpg>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="icon" type="image/x-icon" href="recursos/FAVICON-icons8-cat-footprint-ios-16-filled-32.png">
 
@@ -177,15 +177,50 @@
                 <h2 class="h2 section-title">
                     <span class="span">Donate </span> and promote yourself
                 </h2>
-                <div class="background-image">
+                <div class="background-image parallax">
                     <div id="containerDonate">
                         <p class="section-text">
                             Donating children's items helps provide joy and support to those in need, fostering a brighter future for young hearts. Your contribution can make a lasting difference in a child's life. Join us in spreading smiles through the gift of childhood essentials.
                         </p>
-                        <button class="btn-donar">Donar</button>
+                        <button class="btn-donar">Donate</button>
                     </div>
                 </div>
             </section>
+
+            <!-- PRODUCTOS -->
+            <h2 class="h2 section-title">
+                <span class="span">Products</span>
+            </h2>
+            <!-- Buscador y filtros -->
+
+            <!-- PRODUCTS -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar producto...">
+                <select id="estadoFilter">
+                  <option value="">Todos los estados</option>
+                  <option value="nuevo">Nuevo</option>
+                  <option value="usado">Usado</option>
+                </select>
+                <select id="edadFilter">
+                  <option value="">Todas las edades</option>
+                  <option value="3">3+</option>
+                  <option value="5">5+</option>
+                  <option value="8">8+</option>
+                </select>
+                <button type="button" id="buscarBtn">Buscar</button>
+              </div>
+              
+            <section class="Productos" id="productos">
+                <div class="products">
+                    <!-- Aquí se mostrarán los productos -->
+    <div class="carts" data-estado="nuevo" data-edad="3" data-nombre="Juguete 1">Juguete 1 - Estado: Nuevo, Edad: 3+</div>
+    <div class="carts" data-estado="usado" data-edad="5" data-nombre="Juguete 2">Juguete 2 - Estado: Usado, Edad: 5+</div>
+    <div class="carts" data-estado="nuevo" data-edad="8" data-nombre="Juguete 3">Juguete 3 - Estado: Nuevo, Edad: 8+</div>
+    <!-- Agregar más productos aquí -->
+                </div>
+            </section>
+
+
 
             
 
@@ -203,7 +238,7 @@
             <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
                 <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
             </a>
-            <script src="./assets/main.js" defer></script>
+            <script src="./assets/main.js"></script>
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

@@ -445,27 +445,30 @@ body {
     position: relative;
 }
 
-/* Estilo para la imagen de fondo */
 .background-image {
-    background-image: url('./img/donate.jpg'); /* Cambia 'ruta_de_la_imagen.jpg' por la ruta de tu imagen de fondo */
+    background-image: url('./img/donate.jpg'); 
     background-size: cover;
     background-position: center;
-    height: 400px; /* Altura deseada de la sección */
+    height: 400px; 
     display: flex;
     align-items: center;
 }
 
-/* Estilo para el contenido dentro de la sección */
 #containerDonate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     text-align: center;
-    color: #ffffff; /* Color del texto */
+    color: #ffffff; 
 }
 
-
 .section-text {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    width: 100%;
+    max-width: 600px; 
+    font-size: 1.8rem;
+    margin: 0px 10px 30px 10px
 }
 
 .btn-donar {
@@ -473,10 +476,22 @@ body {
     color: #fff; /* Color del texto del botón */
     border: none;
     padding: 10px 20px;
-    font-size: 1.2rem;
+    font-size: 2.3rem;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Transición para el efecto hover */
 }
+
+.btn-donar:hover {
+    background-color: #ffffff; /* Cambio del fondo a blanco en hover */
+    color: #ff5733; /* Cambio del texto a naranja en hover */
+}
+
+/*-----------------------------------*\
+#SEARCH
+\*-----------------------------------*/
+
+  
 
 /*-----------------------------------*\
 #PRODUCT
@@ -552,7 +567,7 @@ body {
     margin-bottom: 16px;
     transition-duration: .5s;
 }
-/*end header*/
+
 
 .count-product{
     margin-top: 10px;
