@@ -8,7 +8,7 @@
                   <div class="hero-content">
                     <h2 class="wow animate__animated animate__fadeInLeft animate__slow">Second Life, New Smile</h2>
                     <h1 class="wow animate__animated animate__fadeInRight animate__slow">Donate, sell or exchange what your children no longer need</h1><br>
-                    <button class="btn-donar wow animate__animated animate__bounceIn animate__slower">Sign up</button>
+                    <a href="/register"><button   class="btn-donar wow animate__animated animate__bounceIn animate__slower">Sign up</button></a>
                   </div>
                 </section>
               
@@ -78,63 +78,78 @@
                   </div>
                 </section>
     
-                <!-- PUBLICITADOS -->
-                <section id="servicios" class="section offer" aria-label="offer">
-                    <h2 class="h2 section-title">
-                        <span class="span">Donate </span> and promote yourself
-                    </h2>
+                <!-- DONATE -->
+                <section id="donate" class="section offer" aria-label="offer">
+                  <h2 class="h2 section-title">
+                    <span class="span">Donate </span> and promote yourself
+                  </h2>
                     <div class="background-image">
-                        <div id="containerDonate">
-                            <p class="section-text">
-                                Donating children's items helps provide joy and support to those in need, fostering a brighter future for young hearts. Your contribution can make a lasting difference in a child's life. Join us in spreading smiles through the gift of childhood essentials.
-                            </p>
+                      <div id="containerDonate">
+                        <p class="section-text">
+                          Donating children's items helps provide joy and support to those in need, fostering a brighter future for young hearts. Your contribution can make a lasting difference in a child's life. Join us in spreading smiles through the gift of childhood essentials.
+                        </p>
                             <button class="btn-donar">Donate</button>
                         </div>
-                    </div>
-                </section>
-    
-                <!-- PRODUCTOS -->
-                <h2 class="h2 section-title">
-                    <span class="span" id="containerProductsEnlace">Products</span>
-                </h2>
+                      </div>
+                    </section>
+                    
+                    <!-- PRODUCTOS -->
+                    <h2 class="h2 section-title">
+                      <span class="span" id="containerProductsEnlace">Products</span>
+                    </h2>
                 <!-- Buscador y filtros -->
-    
+                
                 <!-- PRODUCTS -->
                 
                 <section class="containerSearch">
-                    <div class="containerInsideSearch">
-                        <input type="text" id="searchInput" placeholder="Search product...">
-                        <select id="estadoFilter">
-                          <option value="">All the states</option>
-                          <option value="new">New</option>
-                          <option value="used">Used</option>
-                        </select>
-                        <select id="edadFilter">
-                          <option value="">All ages</option>
-                          <option value="3">3+</option>
-                          <option value="5">5+</option>
-                          <option value="8">8+</option>
-                        </select>
-                        <button type="button" id="buscarBtn">Search</button>
-                      </div>
+                  <div class="containerInsideSearch">
+                    <input type="text" id="searchInput" placeholder="Search product...">
+                    <select id="estadoFilter">
+                      <option value="">All the states</option>
+                      <option value="new">New</option>
+                      <option value="used">Used</option>
+                    </select>
+                    <select id="edadFilter">
+                      <option value="">All ages</option>
+                      <option value="3">3+</option>
+                      <option value="5">5+</option>
+                      <option value="8">8+</option>
+                    </select>
+                    <button type="button" id="buscarBtn">Search</button>
+                  </div>
                 </section>
                 <div class="containerProducts">
-                    <section class="Productos" id="productos">
-                        <div class="products">
-                            <!-- PRODUCTS -->
-                        </div>
-                    </section>
+                  <section class="Productos" id="productos">
+                    <div class="products">
+                      <!-- PRODUCTS -->
+                    </div>
+                  </section>
                 </div>
-    
-    
+                
+                
+
+                <section id="donate" class="section offer" aria-label="offer">
+                  <h2 class="h2 section-title">
+                    <span class="span">Publish your</span> product here
+                  </h2>
+                    <div class="background-image-publish">
+                      <div id="containerDonate">
+                        <p class="section-text">
+                          You can publish your products to sell or change them
+                        </p>
+                            <button class="btn-donar">Publish</button>
+                        </div>
+                      </div>
+                    </section>
+                
                 <!-- SERVICIOS -->
-    
+                
                 <section class="section service" aria-label="service">
                   <div class="container">
                     <h2 class="h2 section-title wow animate__animated animate__bounceInUp" data-wow-duration="1s" data-wow-delay="0s">
                       <span class="span">Trade or buy</span> whenever you want
                     </h2>
-                
+                    
                     <ul class="grid-list">
                       <li class="scrollbar-item wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
                         <div class="service-card">
@@ -211,6 +226,31 @@
                       <a class="btn wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="1.4s">Return Policies</a>
                     </div>
                   </div>
+                </section>
+
+
+                
+                <section id="containerContactFooter">
+                  <h2 class="h2 section-title">
+                    <span class="span">Contact </span>Us
+                </h2>
+                  <div id="id02">
+                    <form class="formFooter  modal-content animate" action="/action_page.php" method="post">
+                        <div class="container-category">
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Type your name here" name="uname" required>
+                            <label for="uname"><b>Email</b></label>
+                            <input type="email" placeholder="email@email.com" name="uname" required>
+                            <label for="uname"><b>Message</b></label>
+                            <textarea name="textarea" rows="05" cols="50" required></textarea>
+                            <button class="button-submit" type="submit">Send Message</button>
+                            <label>
+                                <input required type="checkbox" checked="checked" name="lopd" pattern="[A-Za-z0-9_-]{1,15}">
+                                Read and accept the data privacy <a href="#">Terms</a>.
+                            </label>
+                        </div>
+                    </form>
+                                </div>
                 </section>
                   
     

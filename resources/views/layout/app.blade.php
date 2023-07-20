@@ -28,7 +28,7 @@
 
     <footer>
 
-        
+        <x-footer/>
 
     </footer>
 
@@ -50,6 +50,7 @@
     <script>
         new WOW().init();
     </script>
+    <script src="https://kit.fontawesome.com/aea951a809.js"></script>
 
 </body>
 

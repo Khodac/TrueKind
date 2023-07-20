@@ -1,6 +1,3 @@
-
-
-
 <?php $__env->startSection('content'); ?>
     </main>
     <section class="section hero has-bg-image" id="home" aria-label="home"

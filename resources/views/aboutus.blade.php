@@ -1,5 +1,10 @@
+@extends('layout.app')
+
+
+@section('content')
+
 <main>
-    <section class="section about has-bg-image" id="home" aria-label="home">
+    <section class="section about has-bg-image" id="home" aria-label="home" style="background-image: url('{{ asset('/img/grupoAmigos.jpg') }}')">
         <div class="hero-content">
             <h2 class="wow animate__animated animate__fadeInLeft animate__slow">
                 Second Life, New Smile
@@ -16,8 +21,8 @@
     <section
         class="cta has-bg-image"
         aria-label="cta"
-        style="background-image: 
-    >
+        >
+    
         <div class="aboutUs-info">
             <p class="wow">
                 At Truekind, our passion is to make the world a better place for
@@ -81,3 +86,5 @@
         </div>
     </section>
 </main>
+
+@endsection

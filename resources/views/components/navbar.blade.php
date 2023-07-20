@@ -22,23 +22,41 @@
                 </li>
 
                 <li class="navbar-item">
-                    <a class="navbar-link" href="aboutus.html" data-nav-link>About us</a>
+                    <a class="navbar-link" href="/aboutus" data-nav-link>About us</a>
                 </li>
 
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#contacto" data-nav-link>Contact</a>
+                    <a class="navbar-link" href="#containerContactFooter" data-nav-link>Contact</a>
                 </li>
-                
-            </ul>
 
-            <a class="navbar-action-btn">Log In</a>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="/register" data-nav-link>Sing Up</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a class="navbar-link" href="/login" data-nav-link>Login</a>
+                </li>
+
+                @auth
+                    <li class="colorUser nav-item">
+                        <span class="navbar-link">Hola, {{ Auth::user()->name }}</span>
+                    </li>
+                @endauth
+                <li class="nav-item">
+                    <a class="colorUser navbar-link" href="{{ route('logout') }}"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        Logout
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#donate" data-nav-link>Donate </a>
+                </li>
+
+            </ul>
         </nav>
 
-        <div class="header-actions">
-            
-            <button class="action-btn user" aria-label="User">
-                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-            </button>
 
-        </div>
 </header>
