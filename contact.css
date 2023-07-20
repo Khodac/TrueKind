@@ -1,7 +1,7 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Full-width input fields */
-input[type=text], input[type=email], textarea {
+input[type=text], input[type=email], textarea, select[name=category], input[type=price] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -25,8 +25,8 @@ button {
     font-weight: bold;
  }
  
- .button-contact {
- 	width:auto;
+ .button-action {
+ 	  width:auto;
     background-color: #D3D2FE;
     font-weight: bold;
     color: #212121;
@@ -65,6 +65,8 @@ span.psw {
   padding-top: 16px;
 }
 
+
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -81,17 +83,21 @@ span.psw {
   
 }
 
+
+
 @media (min-width: 768px) {
-    .modal {
+    .modal,
+    #id02 {
         width: 50%;
     }
 }
+
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #D3D2FE;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
+  border: 1px solid #D3D2FE;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 

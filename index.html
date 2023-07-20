@@ -12,7 +12,58 @@
     <main>
       <h1>HOLA TRUEKIND</h1>
 
-      <button class="button-contact" onclick="document.getElementById('id01').style.display='block'" >Contact</button>
+      <button class="button-action" onclick="document.getElementById('form-submit-product').style.display='block'" >Send product to change it!</button>
+
+      <div id="form-submit-product" class="modal">
+        
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('form-submit-product').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="LOGO -SLOGAN-HORSE.png" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="container">
+            <label for="name"><b>Product Name</b></label>
+            <input type="text" placeholder="Type your name here" name="uname" required>
+
+            <label for="category" class="form-label">Type</label>
+            <select required class="category" name="category">
+                <option value="" selected disabled>category</option>
+                <option value="toy">Toy</option>
+                <option value="accesories">Accesories</option>
+                <option value="clothes">Clothes</option>
+            </select>
+
+            <label for="category" class="form-label">I change it for</label>
+            <select required class="category" name="category">
+                <option value="" selected disabled>category</option> 
+                <option value="surprise">Surprise me!</option> 
+                <option value="toy">Toy</option>
+                <option value="accesories">Accesories</option>
+                <option value="clothes">Clothes</option>
+            </select>
+
+            <label for="price"><b>Price</b></label>
+            <input type="price" name="uname">
+            
+            
+            <label for="uname"><b>Description</b></label>
+            <textarea name="textarea" rows="10" cols="50" placeholder="Type a great description of your product" required></textarea>
+                  
+            <button class="button-submit" type="submit">Send Product</button>
+            <label>
+              <input required type="checkbox" checked="checked" name="lopd" pattern="[A-Za-z0-9_-]{1,15}"> Read and accept the data privacy statement.
+            </label>
+          </div>
+
+          <div class="container">
+            <button type="button" onclick="document.getElementById('form-submit-product').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Privacy <a href="#">Terms</a></span>
+          </div>
+        </form>
+      </div>
+
+      <button class="button-action" onclick="document.getElementById('id01').style.display='block'" >Contact</button>
 
       <div id="id01" class="modal">
         
@@ -23,7 +74,7 @@
           </div>
 
           <div class="container">
-            <label for="uname"><b>Name</b></label>
+            <label for="name"><b>Name</b></label>
             <input type="text" placeholder="Type your name here" name="uname" required>
             
             <label for="uname"><b>Email</b></label>
@@ -42,6 +93,30 @@
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
             <span class="psw">Privacy <a href="#">Terms</a></span>
           </div>
+        </form>
+      </div>
+
+      <div id="id02" class="">
+        
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          
+          <div class="container">
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Type your name here" name="uname" required>
+            
+            <label for="uname"><b>Email</b></label>
+            <input type="email" placeholder="email@email.com" name="uname" required>
+            
+            <label for="uname"><b>Message</b></label>
+            <textarea name="textarea" rows="05" cols="50" required></textarea>
+                  
+            <button class="button-submit" type="submit">Send Message</button>
+            <label>
+              <input required type="checkbox" checked="checked" name="lopd" pattern="[A-Za-z0-9_-]{1,15}"> Read and accept the data privacy <a href="#">Terms</a>.
+            </label>
+          </div>
+
+          
         </form>
       </div>
 
