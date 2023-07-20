@@ -45,40 +45,49 @@
                 <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
             </button>
         </div>
-</header>
-
-
- <div class="slideshow-container">
-
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="https://cdn.pixabay.com/photo/2014/09/16/01/19/girl-447701_640.jpg" style="width:100%">
-        <div class="text">Used teddy bear</div>
-      </div>
+      </header>
       
+      
+<div class="slideshow-container">
+<div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="assets/img/girl-bear.jpg">
+        <div class="text">Used teddy bear</div>
+     </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
       <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
-        <img src="https://cdn.pixabay.com/photo/2015/10/25/14/43/bucket-1005891_640.jpg" style="width:100%">
+        <img src="assets/img/bucket-1005891_640.jpg" >
         <div class="text">Caption Two</div>
       </div>
       
       <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
-        <img src="https://cdn.pixabay.com/photo/2016/03/26/22/22/happy-1281590_640.jpg" style="width:100%">
+        <img src="assets/img/happy-bear.jpg">
         <div class="text">Caption Three</div>
       </div>
       
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
       
       </div>
+      <br>
+  
       
       <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
       </div>
+
+<div class=" comentarios ">
+  <textarea name="" id="" cols="30" rows="5">Descripción</textarea>
+  <textarea name="" id="" cols="27" rows="5">Estado</textarea>
+
+</div>
+
 <section>
+
 <div id="after_submit">
 <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
 <div class="row">
@@ -100,6 +109,35 @@
   <input id="submit_button" type="submit" value="Send email" />
 </form>
 </div>
+<!--footer-->
+
+<section id="footer" class="footer">
+  <div class="lineLeft"></div>
+    <div class="contact">  
+      <a href="">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="">
+        <i class="fa-brands fa-twitter"></i>
+      </a>    
+    </div>
+  <div class="lineRight"></div>
+  <div class="info">
+    <p class="copyright"><i class="fa-regular fa-copyright"></i> Truekind</p>
+    <p class="follow">follow us</p>  
+    <div class="infoLinks">
+      <p>Terms & Conditions</p>
+      <p>Privacy Policy</p>
+      <!-- <p>Colaborations</p> -->
+    </div>
+  </div>
+</section>
+</footer>
+
+
 
 <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
   <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
