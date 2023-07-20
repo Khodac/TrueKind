@@ -1,42 +1,66 @@
-![Logo](https://drive.google.com/uc?id=1Oud7AR6zsJCqfzgEbmDzOt5TiFpeGiPt)
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
+## About Laravel
 
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-![kids](https://github.com/Khodac/TrueKind/blob/NavBar/assets/img/hero-banner.jpg?raw=true)
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Learning Laravel
 
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+## Laravel Sponsors
 
-<p style="text-align:justify;">Once upon a time there was a magical company called Truekind. In the mysterious realm of technology, Truekind shone like a star in the night sky. It was a place where the most innovative and creative ideas came to life and became magical solutions for the world. At Truekind, a group of intrepid developers, designers, and techies met every day in their digital castle. There, among their glowing screens and magical keyboards, they created amazing apps and websites with the power to make people's lives easier and happier. The heart of Truekind was its haunted library, where the legendary JSON files were located. These mysterious files contained amazing secrets: the identification of each item and its name, as well as other magical attributes that made it unique and special. But, to share magic with the world, Truekind needed a portal. So, with courage and skill, they decided to create their own website. Using the magic of JavaScript and the arts of programming, they made a powerful HTTP request to the JSON file.</p>
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-<p style="text-align:justify;">The JSON file, like a treasure chest, was opened revealing the hidden data. One by one, the objects in the archive took shape on the web page. Each item appeared with its identification and name, along with other attributes that gave it life and meaning. People across the kingdom were amazed to see Truekind's magic. The website glowed with the splendor of data, and every time someone visited the site, they were enchanted by the beauty and simplicity of the information displayed.</p>
+### Premium Partners
 
-<p style="text-align:justify;">Truekind's tales spread throughout the kingdom, and more and more people wanted to be a part of his wonderful world. The company grew and prospered, bringing happiness and solutions to all who encountered its technological magic. And so, Truekind's story became a legendary tale that inspired many others to create and share their magic with the world. In this magical kingdom, where technology mixed with creativity and innovation, Truekind continued to leave a shining imprint on the hearts of all who crossed its path.</p>
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
 
-<p style="text-align:justify;">And bunting, this Truekind tale is over, but its magic and impact continue to grow day by day in the wonderful world of technology. </p>
+## Contributing
 
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-![donate](https://drive.google.com/uc?id=1kqwJmwktJFsNiG7kFErgvS2pZutkzccP)
+## Code of Conduct
 
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
+## Security Vulnerabilities
 
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## 🔗 Links
-[![figma](https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_128,w_128,f_auto,q_auto:eco,dpr_1/bai3sh9mgzuihjoh8olj)](https://www.figma.com/file/wdCTcOktQk00FJBG19TSRR/Untitled?type=design&node-id=37%3A103&mode=design&t=JLOdK90ufDrAsIBM-1)
+## License
 
-
-## Authors
-
-- [@Khodac](https://github.com/Khodac)
-- [@yzadeveloper](https://github.com/yzadeveloper)
-- [@Ninetthe](https://github.com/Ninetthe)
-- [@mariene33](https://github.com/mariene33)
-- [@NacylaM](https://github.com/NacylaM)
-- [@OrzeFox](https://github.com/OrzeFox)
-- [@LibertadLorda](https://github.com/LibertadLorda)
-- [@mcefen](https://github.com/mcefen)
-- [@Fer-gi](https://github.com/Fer-gi)
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
