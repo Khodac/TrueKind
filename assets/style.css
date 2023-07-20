@@ -122,6 +122,7 @@ body {
     color: var(--black);
     font-size: 1.6rem;
     line-height: 1.5;
+
 }
 
 :focus-visible {
@@ -1452,11 +1453,26 @@ i{
 }
 }
 
-body{
-    background-color: #e60000;
+.has-bg-image{
+    background-image: url(../assets/img/9\ amigos\ 2.png); 
+}
+
+.wow{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .question {
-    color: #157FE6;
+    color: #000000;
 }
+
+.body-somos {
+    font-family: var(--ff-nunito_sans);
+    padding-bottom: 20px;
+}
+
+.bottom-page{
+    margin-bottom: 20px;
+}
+
 
