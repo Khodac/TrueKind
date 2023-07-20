@@ -7,3 +7,16 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+const $fileSelector = document.querySelector("#fileSelector"),
+$previewImage = document.querySelector("#previewImage");
+$fileSelector.addEventListener("change", () => {
+const files = $fileSelector.files;
+if (!files || !files.length) {
+    $previewImage.src = "";
+    return;
+}
+const firtsfile = files[0];
+const objectURL = URL.createObjectURL(firtsfile);
+$previewImage.src = objectURL;
+});

@@ -1,180 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TrueKind</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="contact.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <main>
-      <h1>HOLA TRUEKIND</h1>
+        <h1>HOLA TRUEKIND</h1>
 
-      <button class="button-action" onclick="document.getElementById('form-submit-product').style.display='block'" >Send product to change it!</button>
+        <button class="button-action"
+            onclick="document.getElementById('form-submit-product').style.display='block'">Send product to change
+            it!</button>
 
-      <div id="form-submit-product" class="modal">
-        
-        <form class="modal-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('form-submit-product').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="LOGO -SLOGAN-HORSE.png" alt="Avatar" class="avatar">
-          </div>
+        <div id="form-submit-product" class="modal">
 
-          <div class="container">
-            <label for="name"><b>Product Name</b></label>
-            <input type="text" placeholder="Type your name here" name="uname" required>
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('form-submit-product').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="LOGO -SLOGAN-HORSE.png" alt="Avatar" class="avatar">
 
-            <label for="category" class="form-label">Type</label>
-            <select required class="category" name="category">
-                <option value="" selected disabled>category</option>
-                <option value="toy">Toy</option>
-                <option value="accesories">Accesories</option>
-                <option value="clothes">Clothes</option>
-            </select>
-
-            <label for="category" class="form-label">I change it for</label>
-            <select required class="category" name="category">
-                <option value="" selected disabled>category</option> 
-                <option value="surprise">Surprise me!</option> 
-                <option value="toy">Toy</option>
-                <option value="accesories">Accesories</option>
-                <option value="clothes">Clothes</option>
-            </select>
-
-            <label for="price"><b>Price</b></label>
-            <input type="price" name="uname">
-            
-            
-            <label for="uname"><b>Description</b></label>
-            <textarea name="textarea" rows="10" cols="50" placeholder="Type a great description of your product" required></textarea>
-                  
-            <button class="button-submit" type="submit">Send Product</button>
-            <label>
-              <input required type="checkbox" checked="checked" name="lopd" pattern="[A-Za-z0-9_-]{1,15}"> Read and accept the data privacy statement.
-            </label>
-          </div>
-
-          <div class="container">
-            <button type="button" onclick="document.getElementById('form-submit-product').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw">Privacy <a href="#">Terms</a></span>
-          </div>
-        </form>
-      </div>
-
-      <button class="button-action" onclick="document.getElementById('id01').style.display='block'" >Contact</button>
-
-      <div id="id01" class="modal">
-        
-        <form class="modal-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="LOGO -SLOGAN-HORSE.png" alt="Avatar" class="avatar">
-          </div>
-
-          <div class="container">
-            <label for="name"><b>Name</b></label>
-            <input type="text" placeholder="Type your name here" name="uname" required>
-            
-            <label for="uname"><b>Email</b></label>
-            <input type="email" placeholder="email@email.com" name="uname" required>
-            
-            <label for="uname"><b>Message</b></label>
-            <textarea name="textarea" rows="10" cols="50" required></textarea>
-                  
-            <button class="button-submit" type="submit">Send Message</button>
-            <label>
-              <input required type="checkbox" checked="checked" name="lopd" pattern="[A-Za-z0-9_-]{1,15}"> Read and accept the data privacy statement.
-            </label>
-          </div>
-
-          <div class="container">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw">Privacy <a href="#">Terms</a></span>
-          </div>
-        </form>
-      </div>
-
-      <div id="id02" class="">
-        
-        <form class="modal-content animate" action="/action_page.php" method="post">
-          
-          <div class="container">
-            <label for="name"><b>Name</b></label>
-            <input type="text" placeholder="Type your name here" name="uname" required>
-            
-            <label for="uname"><b>Email</b></label>
-            <input type="email" placeholder="email@email.com" name="uname" required>
-            
-            <label for="uname"><b>Message</b></label>
-            <textarea name="textarea" rows="05" cols="50" required></textarea>
-                  
-            <button class="button-submit" type="submit">Send Message</button>
-            <label>
-              <input required type="checkbox" checked="checked" name="lopd" pattern="[A-Za-z0-9_-]{1,15}"> Read and accept the data privacy <a href="#">Terms</a>.
-            </label>
-          </div>
-
-          
-        </form>
-      </div>
+                    <div>
+                        <br><br>
+                        <h1>Image previews</h1>
+                        <br>
+                        <input type="file" id="fileSelector" accept="image/*" multiple>
+                        <br><br>
+                        <img id="previewImage">
+                    </div>
+                </div>
 
 
-      <footer>
-        <section id="footer" class="foot">
-          <div class="contact">
-            <h3>Contáctanos</h3>
-            <div class="contact-info">
-              <p>
-                <i class="fa-solid fa-location-dot fa-lg"> </i>&nbsp; 22
-                Innovation Street CA, US
-              </p>
-              <p>
-                <i class="fa-solid fa-envelope fa-lg"> </i>&nbsp;
-                office@syncmobile.com
-              </p>
-              <p>
-                <i class="fa-solid fa-phone fa-lg"> </i>&nbsp; +44 376 945 23
-              </p>
+                <div class="container">
+                    <label for="name"><b>Product Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="uname" required>
+
+                    <label for="category" class="form-label">Type</label>
+                    <select required class="category" name="category">
+                        <option value="" selected disabled>category</option>
+                        <option value="toy">Toy</option>
+                        <option value="accesories">Accesories</option>
+                        <option value="clothes">Clothes</option>
+                    </select>
+
+                    <label for="category" class="form-label">I change it for</label>
+                    <select required class="category" name="category">
+                        <option value="" selected disabled>category</option>
+                        <option value="surprise">Surprise me!</option>
+                        <option value="toy">Toy</option>
+                        <option value="accesories">Accesories</option>
+                        <option value="clothes">Clothes</option>
+                    </select>
+
+                    <label for="price"><b>Price</b></label>
+                    <input type="price" name="uname">
+
+
+                    <label for="uname"><b>Description</b></label>
+                    <textarea name="textarea" rows="10" cols="50" placeholder="Type a great description of your product"
+                        required></textarea>
+
+                    <button class="button-submit" type="submit">Send Product</button>
+                    <label>
+                        <input required type="checkbox" checked="checked" name="lopd" pattern="[A-Za-z0-9_-]{1,15}">
+                        Read and accept the data privacy statement.
+                    </label>
+                </div>
+
+                <div class="container">
+                    <button type="button" onclick="document.getElementById('form-submit-product').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <span class="psw">Privacy <a href="#">Terms</a></span>
+                </div>
+            </form>
+        </div>
+
+        <button class="button-action" onclick="document.getElementById('id01').style.display='block'">Contact</button>
+
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="LOGO -SLOGAN-HORSE.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="uname" required>
+
+                    <label for="uname"><b>Email</b></label>
+                    <input type="email" placeholder="email@email.com" name="uname" required>
+
+                    <label for="uname"><b>Message</b></label>
+                    <textarea name="textarea" rows="10" cols="50" required></textarea>
+
+                    <button class="button-submit" type="submit">Send Message</button>
+                    <label>
+                        <input required type="checkbox" checked="checked" name="lopd" pattern="[A-Za-z0-9_-]{1,15}">
+                        Read and accept the data privacy statement.
+                    </label>
+                </div>
+
+                <div class="container">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <span class="psw">Privacy <a href="#">Terms</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div id="id02" class="">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+
+                <div class="container">
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="uname" required>
+
+                    <label for="uname"><b>Email</b></label>
+                    <input type="email" placeholder="email@email.com" name="uname" required>
+
+                    <label for="uname"><b>Message</b></label>
+                    <textarea name="textarea" rows="05" cols="50" required></textarea>
+
+                    <button class="button-submit" type="submit">Send Message</button>
+                    <label>
+                        <input required type="checkbox" checked="checked" name="lopd" pattern="[A-Za-z0-9_-]{1,15}">
+                        Read and accept the data privacy <a href="#">Terms</a>.
+                    </label>
+                </div>
+
+
+            </form>
+        </div>
+
+
+        <footer>
+            <section id="footer" class="foot">
+                <div class="contact">
+                    <h3>Contáctanos</h3>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fa-solid fa-location-dot fa-lg"> </i>&nbsp; 22
+                            Innovation Street CA, US
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-envelope fa-lg"> </i>&nbsp;
+                            office@syncmobile.com
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone fa-lg"> </i>&nbsp; +44 376 945 23
+                        </p>
+                    </div>
+                </div>
+                <div class="value">
+                    <h3>Sobre Nosotros</h3>
+                    <div class="value-info">
+                        <p>Terms & Conditions</p>
+                        <p>Privacy Policy</p>
+                        <p>Article Details</p>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+            </section>
+            <div>
+                <small>
+                    &copy; 2023 All rights reserved. Various
+                </small>
             </div>
-          </div>
-          <div class="value">
-            <h3>Sobre Nosotros</h3>
-            <div class="value-info">
-              <p>Terms & Conditions</p>
-              <p>Privacy Policy</p>
-              <p>Article Details</p>
-            </div>
-          </div>
-          <div class="social">
-            <a href="">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-pinterest"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-         
-        </section>
-        <div>
-            <small>
-              &copy; 2023  All rights reserved. Various 
-            </small>
-          </div>
-    </footer>
-        <script
-          src="https://kit.fontawesome.com/aea951a809.js"
-          crossorigin="anonymous"
-        ></script>
-    
+        </footer>
+        <script src="https://kit.fontawesome.com/aea951a809.js" crossorigin="anonymous"></script>
+
     </main>
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
