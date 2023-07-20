@@ -181,6 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p class="title">${product.tituloProducto}</p>
       
       <a href="#" class="btn-add-cart">Add favorites</a>
+      <a href="pagina_producto.html" class="btn-add-cart">Products details</a>
     `;
 
     productDiv.querySelector('.btn-add-cart').addEventListener('click', () => {

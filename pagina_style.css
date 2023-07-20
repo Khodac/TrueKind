@@ -1,13 +1,17 @@
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+
+body {
+  background-color: var(--portland-orange);
+  display: grid ;
+}
+
+
 
 /* Slideshow container */
 .slideshow-container {
+  display: grid;
   max-width: 1000px;
-  position: relative;
-  margin: auto;
+  /*position: relative;*/
+  margin: 30%;
 }
 
 /* Next & previous buttons */
@@ -87,24 +91,22 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
-}
-button {
+};
 
-  margin: 25%;
-  margin-top: 3%;
-  text-align: center;
-  padding: 1em;
-  width: 700px;
-}
 #after_submit {
   
-margin-top: -280px;
-text-align: center;
+  text-align: center;  
+  margin-top: 150px;
+  display: grid;
+ 
+
+
 
 
 }
-h1 {
-  text-align: center;
-}
+
+
+
+
 
 
