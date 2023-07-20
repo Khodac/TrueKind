@@ -32,10 +32,9 @@
 ## Authors
 
 - [@Khodac](https://github.com/Khodac)
-
-- [@RAISSA](https://github.com/Khodac)
-- [@MARINA](https://github.com/Khodac)
-- [@YOLANDA](https://github.com/Khodac)
+- [@yzadeveloper](https://github.com/yzadeveloper)
+- [@Ninetthe](https://github.com/Ninetthe)
+- [@mariene33](https://github.com/mariene33)
 - [@NacylaM](https://github.com/NacylaM)
 - [@OrzeFox](https://github.com/OrzeFox)
 - [@LibertadLorda](https://github.com/LibertadLorda)
