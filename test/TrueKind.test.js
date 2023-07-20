@@ -1,4 +1,4 @@
-const Truekind = require('../main');
+const main = require('../main.');
 
 describe("Test Truekind", () => {
     test("", () => {
