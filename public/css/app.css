@@ -1498,5 +1498,34 @@ button[type="submit"]:hover {
         margin-inline: auto;
     }
 
+/** 
+    *about us
+   */
 
+    .has-bg-image{
+    background-image: url(../assets/img/9\ amigos\ 2.png); 
+}
+
+.wow{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.question {
+    color: #000000;
+}
+
+.body-somos {
+    font-family: var(--ff-nunito_sans);
+    padding-bottom: 20px;
+}
+
+.bottom-page{
+    margin-bottom: 20px;
+}
+
+
+
+
+    
 }
