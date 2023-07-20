@@ -92,14 +92,6 @@ img {
   from {opacity: .4} 
   to {opacity: 1}
 }
-.comentarios {
-  margin: auto;
-  margin-left: 31%;
-  position:relative;
-  
-  width: 650px;
-  height: 300px;
-}
 
 #after_submit {
   
@@ -114,9 +106,16 @@ img {
   
   
  }
+ .comment {
+  position: relative;
+  margin-left: 36%;
+  box-shadow: inherit;
+ }
+
+
  #footer {
   
-  margin: auto;
+  margin-top: 600px;
  }
 
 
