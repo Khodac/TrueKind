@@ -51,10 +51,9 @@ To bring TrueKind's magic to life, the team followed this work process:
 
 ![Donate](https://drive.google.com/uc?id=1kqwJmwktJFsNiG7kFErgvS2pZutkzccP)
 
+
 ## 🔗 Links
-
-- [Figma Design](https://www.figma.com/file/wdCTcOktQk00FJBG19TSRR/Untitled?type=design&node-id=37%3A103&mode=design&t=JLOdK90ufDrAsIBM-1)
-
+[![figma](https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_128,w_128,f_auto,q_auto:eco,dpr_1/bai3sh9mgzuihjoh8olj)](https://www.figma.com/file/wdCTcOktQk00FJBG19TSRR/Untitled?type=design&node-id=37%3A103&mode=design&t=JLOdK90ufDrAsIBM-1)
 ---
 
 ### Desktop
