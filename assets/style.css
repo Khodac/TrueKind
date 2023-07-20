@@ -411,6 +411,32 @@ body {
     background-color: var(--portland-orange);
 }
 
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    max-width: 1170px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .containerHeroContent{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #e60000;
+  }
+ 
+  .hero-content h2{
+    font-size: 6rem; 
+    color: #fff;
+  }
+  .hero-content h1{
+    font-size: 3rem; 
+    color: #fff;
+  }
 /*-----------------------------------*\
   #CATEGORY
 \*-----------------------------------*/
@@ -431,7 +457,7 @@ body {
     margin-block-start: 15px;
     text-align: center;
     transition: var(--transition-1);
-}
+} 
 
 .category-card .card-title:is(:hover, :focus) {
     color: var(--portland-orange);
@@ -449,6 +475,7 @@ body {
     background-image: url('./img/donate.jpg'); 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 400px; 
     display: flex;
     align-items: center;
@@ -562,7 +589,6 @@ body {
         padding: 10px;
     }
 }
-  
   
 /*-----------------------------------*\
 #PRODUCT

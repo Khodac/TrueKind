@@ -1,133 +1,4 @@
-// const formulario = document.getElementById('formulario');
-// const inputs = document.querySelectorAll('#formulario .formulario__input');
 
-// const expresiones = {
-
-// 	nombre: /^[a-zA-ZÀ-ÿ\s]{3,40}$/, // Letras y espacios, pueden llevar acentos.
-// 	apellido: /^[a-zA-ZÀ-ÿ\s]{3,40}$/,
-// 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-// 	//telefono: /^\d{9,14}$/, // 7 a 14 numeros.
-// 	telefono: /^\d{9}$/,
-// 	comentario: /^[a-zA-Z0-9À-ÿ\s]{3,100}$/
-// 	//comentario:/^[a-z]/
-// }
-
-// const campos = {
-// 	nombre: false,
-// 	apellido:false,
-// 	correo: false,
-// 	telefono: false,
-// 	comentario:false
-// }
-
-// const validarFormulario = (e) => {
-// 	switch (e.target.name) {
-// 		case "nombre":
-// 			//alert(e.target.name);
-// 			validarCampo(expresiones.nombre, e.target, 'nombre');
-// 		break;
-		
-// 		case "apellido":
-// 			validarCampo(expresiones.apellido, e.target, 'apellido');
-// 		break;
-		
-// 		case "telefono":
-// 			validarCampo(expresiones.telefono, e.target, 'telefono');
-// 		break;
-
-// 		case "correo":
-// 			//alert(e.target.name);
-// 			validarCampo(expresiones.correo, e.target, 'correo');
-// 		break;
-
-// 		case "comentario":
-// 			//alert('entra en comentario');
-// 			validarCampo(expresiones.comentario, e.target, 'comentario');
-// 		break;
-		
-//         case "email":
-// 			console.log('expresion: '+expresiones.email+'input: '+ e.target +'campo: '+campos);
-// 			validarCampo(expresiones.email, e.target, 'email');
-// 		break;
-		
-//         case "comentario":
-// 			console.log('expresion: '+expresiones.comentario+'input: '+ e.target +'campo: '+campos);
-// 			validarCampo(expresiones.comentario, e.target, 'comentario');
-// 		break;
-// 	}
-// }
-
-// const validarCampo = (expresion, input, campo) => {
-// 	/*alert("validacion"+expresion.test(input.value));*/
-// 	if(expresion.test(input.value)){
-// 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
-// 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
-// 		document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
-// 		document.querySelector(`#grupo__${campo} i`).classList.remove('fa-times-circle');
-// 		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
-// 		campos[campo] = true;
-// 	} else {
-// 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
-// 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
-// 		document.querySelector(`#grupo__${campo} i`).classList.add('fa-times-circle');
-// 		document.querySelector(`#grupo__${campo} i`).classList.remove('fa-check-circle');
-// 		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
-// 		campos[campo] = false;
-// 	}
-// }
-
-// inputs.forEach((input) => {
-// 	input.addEventListener('keyup', validarFormulario);
-// 	input.addEventListener('blur', validarFormulario);
-// });
-
-// formulario.addEventListener('submit', (e) => {
-// 	e.preventDefault();
-
-// 	const terminos = document.getElementById('terminos');
-// 	if(campos.nombre && campos.apellido && campos.correo && campos.comentario && campos.telefono && terminos.checked ){
-// 		formulario.reset();
-// 		document.getElementById('formulario__mensaje-exito').classList.add('activo');
-// 		setTimeout(() => {
-// 			document.getElementById('formulario__mensaje-exito').classList.remove('activo');
-// 		}, 5000);
-
-// 		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-// 			icono.classList.remove('formulario__grupo-correcto');
-// 		});
-// 		campos.nombre=false;
-// 		campos.apellido=false;
-// 		campos.correo=false;
-// 		campos.telefono=false;
-// 		campos.comentario=false;
-// 	} else {
-// 		//alert("falta rrellenra formulario");
-// 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-// 		setTimeout(() => {
-// 			document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
-// 		}, 2000);
-		
-// 		if (!campos.nombre){
-// 			document.getElementById("nombre").focus();
-// 		}
-// 		if (!campos.apellido){
-// 			document.getElementById("apellido").focus();
-// 		}
-// 		if (!campos.telefono){
-// 			document.getElementById("telefono").focus();
-// 		}
-// 		if (!campos.correo){
-// 			document.getElementById("correo").focus();
-// 		}
-// 		if (!campos.comentario){
-// 			document.getElementById("comentario").focus();
-// 		}
-// 		if (!terminos.checked){
-// 			document.getElementById("terminos").focus();
-// 		}
-
-// 	}
-// });
 
 
 
@@ -204,7 +75,6 @@ let countProduct = 0;
 document.getElementById('buscarBtn').addEventListener('click', filterProducts);
 
 function filterProducts() {
-  console.log("Filtering products...");
   const searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
   const estadoFilter = document.getElementById('estadoFilter').value.toLowerCase();
   const edadFilter = document.getElementById('edadFilter').value;
@@ -342,11 +212,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
-    alert('Producto agregado al carrito');
+    alert('Product added to favorites');
   }
 
-  carritoLink.addEventListener('click', () => {
-    window.location.href = 'carrito.html';
-  });
+  // carritoLink.addEventListener('click', () => {
+  //   window.location.href = 'favorites.html';
+  // });
 });
 
