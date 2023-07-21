@@ -18,19 +18,19 @@
     <div class="slideshow-container">
         <div class="mySlides fade">
 
-            <img src="https://cdn.pixabay.com/photo/2014/09/16/01/19/girl-447701_640.jpg" style="width:100%">
+            <img src="{{ asset('img/toycarSlider.jpg') }}" style="width:100%">
 
         </div>
 
         <div class="mySlides fade">
 
-            <img src="https://cdn.pixabay.com/photo/2015/10/25/14/43/bucket-1005891_640.jpg" style="width:100%">
+            <img src="{{ asset('img/toycarSliderDos.jpg') }}" style="width:100%">
 
         </div>
 
         <div class="mySlides fade">
 
-            <img src="https://cdn.pixabay.com/photo/2016/03/26/22/22/happy-1281590_640.jpg" style="width:100%">
+            <img src="{{ asset('img/toycarSlider.jpg') }}" style="width:100%">
 
         </div>
 

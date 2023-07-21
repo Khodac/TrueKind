@@ -5,7 +5,9 @@
             <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
         </button>
 
-        <a class="logo">TrueKind</a>
+        <a class="logo">
+            <img src="<?php echo e(asset('img/logoTrueKind.png')); ?>" width="130" height="100" loading="lazy" alt="service icon"/>
+        </a>
 
         <nav class="navbar" data-navbar>
             <ul class="navbar-list">
@@ -51,9 +53,7 @@
                         <?php echo csrf_field(); ?>
                     </form>
                 </li>
-                <li class="navbar-item">
-                    <a class="navbar-link" href="#donate" data-nav-link>Donate </a>
-                </li>
+                
 
             </ul>
         </nav>

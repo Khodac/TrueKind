@@ -32,6 +32,10 @@ Route::get('/aboutus', function () {
     return view('aboutus');
 });
 
+Route::get('/donate', function () {
+    return view('formdonate');
+});
+
 // Ruta para mostrar el formulario de inicio de sesión
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 
